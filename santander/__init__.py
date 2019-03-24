@@ -1,2 +1,5 @@
 __version__ = "0.1"
 __author__ = "Alexey"
+__url__ = "check git"
+__maintainers__ = "Dich Brothers"
+__email__ = "nomail@nowhere.com"
