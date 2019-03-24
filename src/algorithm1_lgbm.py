@@ -80,7 +80,8 @@ def main_predict(n_folds):
     # Generate submission file
     submission = pd.read_csv(os.path.join("..", "data", "sample_submission.csv"))
     submission['target'] = p_te
-    submission.to_csv(f"lightgbm-{datetime.now().strftime('%m-%d-%Y--%H:%M:%S')}.csv", index=False)
+    submission.to_csv(os.path.join("..", "submissions",
+                                   f"lightgbm-{datetime.now().strftime('%m-%d-%Y--%H:%M:%S')}.csv"), index=False)
 
 
 def main():
